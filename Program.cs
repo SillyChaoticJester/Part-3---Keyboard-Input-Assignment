@@ -6,7 +6,7 @@
         {
             string name;
             int age, currentYear, birthYear;
-            double distOne,distTwo, distThree, rightTriOne, rightTriTwo, addNumOne, addNumTwo, addNumThree, addTotal, distTotal;
+            double distOne,distTwo, distThree, rightTriOne, rightTriTwo, rightTriTotal, addNumOne, addNumTwo, addNumThree, addTotal, distTotal;
             currentYear = DateTime.Now.Year;
 
             //1. Greeting
@@ -33,6 +33,13 @@
             distThree = Convert.ToDouble(Console.ReadLine());
             distTotal = (distOne + distTwo + distThree) / 3;
             Console.WriteLine($"The average would be {Math.Round(distTotal, 2)} km");
+
+            //4. Hypotenuse
+
+            Console.WriteLine("Finally, type down two sides of a Right Triangle, and I will show you the hypotenuse:");
+            rightTriOne = Convert.ToDouble(Console.ReadLine());
+            rightTriTwo = Convert.ToDouble(Console.ReadLine());
+            
             
         }
     }
