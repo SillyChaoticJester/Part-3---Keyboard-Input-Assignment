@@ -6,7 +6,7 @@
         {
             string name;
             int age, currentYear, birthYear;
-            double distOne,distTwo, distThree, rightTriOne, rightTriTwo, addNumOne, addNumTwo, addNumThree, total;
+            double distOne,distTwo, distThree, rightTriOne, rightTriTwo, addNumOne, addNumTwo, addNumThree, addTotal, distTotal;
             currentYear = DateTime.Now.Year;
 
             //1. Greeting
@@ -23,10 +23,17 @@
             addNumOne = Convert.ToDouble(Console.ReadLine());
             addNumTwo = Convert.ToDouble(Console.ReadLine());
             addNumThree = Convert.ToDouble(Console.ReadLine());
-            total = addNumOne + addNumTwo + addNumThree;
-            Console.WriteLine($"Your total is {total}");
+            Math.Round(addTotal = addNumOne + addNumTwo + addNumThree, 2);
+            Console.WriteLine($"Your total is {addTotal}");
 
-
+            //3. Distance
+            Console.WriteLine("Now give me three numbers for a distance, and I will print the average of them");
+            distOne = Convert.ToDouble(Console.ReadLine());
+            distTwo = Convert.ToDouble(Console.ReadLine());
+            distThree = Convert.ToDouble(Console.ReadLine());
+            distTotal = (distOne + distTwo + distThree) / 3;
+            Console.WriteLine($"The average would be {Math.Round(distTotal, 2)} km");
+            
         }
     }
 }
