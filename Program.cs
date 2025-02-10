@@ -36,10 +36,11 @@
 
             //4. Hypotenuse
 
-            Console.WriteLine("Finally, type down two sides of a Right Triangle, and I will show you the hypotenuse:");
+            Console.WriteLine("Finally, type down two sides of a Right Triangle, and I will show you the length of the hypotenuse:");
             rightTriOne = Convert.ToDouble(Console.ReadLine());
             rightTriTwo = Convert.ToDouble(Console.ReadLine());
-            
+            rightTriTotal = Math.Sqrt(Math.Pow(rightTriOne, 2) + Math.Pow(rightTriTwo, 2));
+            Console.WriteLine($"The length of the hypnotenuse is {Math.Round(rightTriTotal, 2)}");
             
         }
     }
